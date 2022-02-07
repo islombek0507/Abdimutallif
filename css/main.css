@@ -1,0 +1,381 @@
+@font-face {
+    font-family: 'Barlow';
+    src: url('../fonts/Barlow-Bold.woff2') format('woff2'),
+        url('../fonts/Barlow-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Barlow';
+    src: url('../fonts/Barlow-Medium.woff2') format('woff2'),
+        url('../fonts/Barlow-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fraunces';
+    src: url('../fonts/Fraunces-Black.woff2') format('woff2'),
+        url('../fonts/Fraunces-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fraunces';
+    src: url('../fonts/Fraunces-Medium.woff2') format('woff2'),
+        url('../fonts/Fraunces-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Fraunces' Arial, Helvetica, sans-serif;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1600px;
+    border: 1px solid black;
+    padding: 0 15px;
+}
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+.main__container{
+    display: flex;
+}
+.dark{
+    width: 35%;
+    
+    
+}
+.img{
+    object-fit: cover;
+}
+
+.biografiya{
+    color: white;
+}
+.dark__asosiy{
+    padding-left: 50px;
+    background-color: #2C343E;
+    padding-bottom: 10px;
+    padding-top: 50px;
+    position: relative;
+    overflow: hidden;
+}
+.white{
+    width: 65%;
+    padding-top: 50px;
+}
+.name{
+    font-family: 'Fraunces';
+    font-size: 28px;
+    color: white;
+}
+.name::after{
+    content: "";
+    position: absolute;
+    background-image: url(../img/line.svg);
+    width: 300px;
+    height: 250px;
+    left: 275px;
+    top: 0;
+
+}
+.pad{
+    padding-left: 50px;
+}
+.devilepment{
+    color: white;
+    opacity: 0.9;
+    font-size: 24px;
+    margin-bottom: 60px;
+}
+.Overview{
+    padding-left: 50px;
+    margin: 0px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: #2C343E;
+    background-color: white;
+}
+.biografiya{
+    padding: 50px 25px 50px 50px;
+    background-color: #2C343E;
+    margin: 0px;
+}
+.white{
+    overflow: hidden;
+}
+.white__eduk{
+  text-transform: uppercase;
+  margin: 0px;
+  background-color: #2C343E;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 50px;
+  position: relative;
+}
+.white__eduk::after{
+content: "";
+background-image: url(../img/Oval.png);
+background-repeat: no-repeat;
+width: 500px;
+height: 250px;
+position: absolute;
+right: 0;
+z-index: -1;
+bottom: 0;
+
+}
+.white__title{
+    padding-left: 50px;
+    display: inline-block;
+    margin-right: 400px;
+}
+.white__sana{
+    font-weight: 700;
+}
+.white__maktab{
+    margin-bottom: 69px;
+}
+.white__ex-text{
+    width: 500px;
+}
+.white__exprens{
+    padding-bottom: 100px;
+    
+}
+.dark__skills{
+    background-color: #2C343E;
+    position: relative;
+    overflow: hidden;
+}
+.dark__skills::after{
+    content: "";
+    position: absolute;
+    background-image: url(../img/line.svg);
+    width: 300px;
+    height: 250px;
+    left: 275px;
+    top: 38px;
+    z-index: 1;
+
+}
+.dark__list{
+    
+    padding: 0px;
+    margin: 0px;
+    padding-left: 50px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.dark__item{
+    width: 50%;
+    font-size: 20px;
+    color: white;
+    display: flex;
+}
+.dark__span-dark{
+    margin-top: 30px;
+    display: block;
+    width: 140px;
+    height: 7px;
+    background-color: white;
+    border: 1px solid white;
+}
+
+.dark__span-white{
+    margin-top: 30px;
+    display: block;
+    width: 50px;
+    height: 7px;
+    border: 1px solid white;
+    background-color: #2C343E;
+}
+.dark__span-dark--taem{
+    width: 180px;
+}
+.dark__span-white--taem{
+width: 10px;
+}
+.dark__span-dark--com{
+    width: 160px;
+}
+.dark__span-white--com{
+width: 30px;
+}
+.dark__span-dark--org{
+    width: 175px;
+}
+.dark__span-white--org{
+width: 15px;
+}
+.white__tech{
+   
+    padding-bottom: 80px;
+
+}
+.dark__lang{
+    padding-bottom: 20px;
+    background-color: #2C343E;
+    position: relative;
+    overflow: hidden;
+}
+.dark__lang::after{
+    content: "";
+    position: absolute;
+    background-image: url(../img/line.svg);
+    width: 300px;
+    height: 250px;
+    left: 275px;
+    top: 38px;
+    z-index: 1;
+}
+.dark__text{
+    color: white;
+    font-size: 20px;
+}
+.dark__can{
+    background-color: #2C343E;
+    padding-bottom: 20px;
+}
+.dark__can-img{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+  
+    margin-right: 20px;
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+.dark__link{
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-top: 15px;
+   
+}
+.adres{ 
+    color: white;
+    margin-top: 15px;
+}
+.dark__can-img--tel{
+    background-image: url(../img/phon.png);
+}
+.dark__can-img--mail{
+    background-image: url(../img/gmail.svg);
+}
+.dark__can-img--loc{
+    background-image: url(../img/loc.svg);
+}
+.white__accom{
+    padding-top: 15px;
+}
+@media screen and (max-width:  700px) {
+  .container{
+      max-width: 700px;
+  }
+  .white__title{
+      width: 100%;
+      margin-right: 80px;
+  }
+  .white__text{
+      width: 100%;
+  }
+  .name{
+      font-size: 24px;
+  }
+  .devilepment{
+      font-size: 20px;
+  }
+  .biografiya{
+      padding-left: 20px;
+  }
+  .pad{
+      padding-left: 20px;
+  }
+  .dark__list{
+      padding-left: 20px;
+  }
+  .dark__asosiy{
+      padding-left: 20px;
+      padding-bottom: 14px;
+  }
+  .dark__list{
+      flex-direction: column;
+  }
+  .dark__span-dark{
+    margin: 0;
+  }
+  .dark__span-white{
+   margin: 0;
+  }
+  .dark__skills{
+      padding-bottom: 15px;
+  }
+  .dark__link{
+      font-size: 12px;
+  }
+  .dark__can-img {
+      display: block;
+      margin-bottom: 5px;
+  }
+  .img{
+      width: 150px;
+      height: 180px;
+  }
+  .white__tech{
+      padding-bottom: 112px;
+  }
+  .white__maktab{
+      margin-bottom: 20px;
+  }
+  .white__ex-text{
+      width: 100%;
+  }
+}
+@media screen and (max-width:  650px) {
+    .main__container{
+        flex-direction: column;
+    }
+    .dark{
+        width: 100%;
+    }
+    .white{
+        width: 100%;
+    }
+    .white__ex-text{
+        width: 100%;
+    }
+    .white__text{
+        width: 100%;
+    }
+    .white__title{
+        display: block;
+    }
+  .white__sana{
+      margin-left: 40px;
+  }
+  .white__eduk{
+      font-size: 20px;
+  }
+}
